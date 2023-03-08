@@ -1,3 +1,4 @@
+import LineUp from "../../atoms/LineUp";
 import Banner from "../../components/banner";
 import Navbar from "../../components/navbar";
 import Session from "../../components/session";
@@ -8,6 +9,7 @@ const Home = () => {
       <Navbar />
       <Banner />
       <Session />
+      <LineUp title="Line-Up"/>
     </>
   );
 };
