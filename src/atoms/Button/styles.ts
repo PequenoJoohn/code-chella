@@ -13,7 +13,7 @@ export const Container = styled.button`
   box-shadow: 4px 4px #444444;
 
   &:hover {
-    background-color: #4650bd;
+    background-color: #519EC5;
   }
 
   > p {
