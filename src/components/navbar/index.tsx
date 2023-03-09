@@ -16,7 +16,9 @@ const Navbar = () => {
 
   return (
     <Container>
-      <img src="./assets/logo-white.png" alt="" />
+      <Link to={"/"}>
+        <img src="./assets/logo-white.png" alt="" />
+      </Link>
       {open ? (
         <MdOutlineClose size={44} onClick={() => handleOpenMenu()} />
       ) : (

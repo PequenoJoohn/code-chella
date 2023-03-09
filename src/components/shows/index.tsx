@@ -40,10 +40,6 @@ const Shows = () => {
         "Rubycat Dolls",
       ],
     },
-    {
-      title: "segunda <13/03>",
-      list: ["Ana Victória"],
-    },
   ];
 
   return (
