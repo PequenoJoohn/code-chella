@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 interface IContainer {
   image: string;
-  position: "left" | "right" | string;
+  position: "left" | "right" | "center" | string;
 }
 
 export const Container = styled.section<IContainer>`
@@ -11,11 +11,12 @@ export const Container = styled.section<IContainer>`
   .picture {
     width: 100%;
     background-image: ${(props) =>
-      props.image &&
-      `url("${props.image.replace(/\.(png|jpg|jpeg|gif)$/, "-mobile$&")}")`};
+    props.image &&
+    `url("${props.image.replace(/\.(png|jpg|jpeg|gif)$/, "-mobile$&")}")`};
     background-size: cover;
     height: 381px;
     background-position: 50%;
+    border-radius: 1rem;
   }
 
   .description {
@@ -51,7 +52,8 @@ export const Container = styled.section<IContainer>`
     .picture {
       max-width: 609px;
       background-image: ${(props) =>
-        props.image && `url("${props.image}-tablet")`};
+    props.image &&
+    `url("${props.image.replace(/\.(png|jpg|jpeg|gif)$/, "-tablet$&")}")`};
     }
 
     .description {
@@ -68,14 +70,14 @@ export const Container = styled.section<IContainer>`
   @media screen and (min-width: 1440px) {
     padding: 4rem 1.5rem;
     flex-direction: ${(props) =>
-      props.position === "left" ? "row" : "row-reverse"};
+    props.position === "left" ? "row" : props.position === "right" ? "row-reverse" : "column"};
     justify-content: center;
 
     .description {
       h6 {
         max-width: 100%;
         width: 100%;
-        text-align: ${(props) => (props.position === "left" ? "start" : "end")};
+        text-align: ${(props) => (props.position === "left" ? "start" : props.position === "right" ? "end" : "center")};
       }
 
       max-width: 540px;
@@ -83,7 +85,7 @@ export const Container = styled.section<IContainer>`
       margin-right: ${(props) => props.position === "right" && "3rem"};
 
       p {
-        text-align: ${(props) => (props.position === "left" ? "start" : "end")};
+        text-align: ${(props) => (props.position === "left" ? "start" : props.position === "right" ? "end" : "center")};
       }
     }
   }
