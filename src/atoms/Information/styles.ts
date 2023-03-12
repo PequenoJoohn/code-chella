@@ -10,7 +10,9 @@ export const Container = styled.section<IContainer>`
 
   .picture {
     width: 100%;
-    background-image: ${props => props.image && `url("${props.image}")`};
+    background-image: ${(props) =>
+      props.image &&
+      `url("${props.image.replace(/\.(png|jpg|jpeg|gif)$/, "-mobile$&")}")`};
     background-size: cover;
     height: 381px;
     background-position: 50%;
@@ -48,7 +50,8 @@ export const Container = styled.section<IContainer>`
 
     .picture {
       max-width: 609px;
-      background-image: url("./assets/people-desktop.png");
+      background-image: ${(props) =>
+        props.image && `url("${props.image}-tablet")`};
     }
 
     .description {
@@ -64,22 +67,23 @@ export const Container = styled.section<IContainer>`
 
   @media screen and (min-width: 1440px) {
     padding: 4rem 1.5rem;
-    flex-direction: ${props => props.position === "left" ? "row" : "row-reverse"};
+    flex-direction: ${(props) =>
+      props.position === "left" ? "row" : "row-reverse"};
     justify-content: center;
 
     .description {
       h6 {
         max-width: 100%;
         width: 100%;
-        text-align: ${props => props.position === "left" ? "start" : "end"};
+        text-align: ${(props) => (props.position === "left" ? "start" : "end")};
       }
 
       max-width: 540px;
-      margin-left: ${props => props.position === "left" && "3rem"};
-      margin-right: ${props => props.position === "right" && "3rem"};
+      margin-left: ${(props) => props.position === "left" && "3rem"};
+      margin-right: ${(props) => props.position === "right" && "3rem"};
 
       p {
-        text-align: ${props => props.position === "left" ? "start" : "end"};
+        text-align: ${(props) => (props.position === "left" ? "start" : "end")};
       }
     }
   }
