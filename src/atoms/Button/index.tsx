@@ -1,4 +1,3 @@
-import { ReactElement } from "react";
 import { ReactSVG } from "react-svg";
 import { Container } from "./styles";
 
