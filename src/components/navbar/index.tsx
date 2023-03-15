@@ -33,10 +33,10 @@ const Navbar = () => {
             <Link to="/mapping">Mapa de Setores</Link>
           </li>
           <li>
-            <Link to="">Informações</Link>
+            <Link to="/informations">Informações</Link>
           </li>
           <li>
-            <Link to="">Ingresso</Link>
+            <Link to="/ticket">Ingresso</Link>
           </li>
         </ul>
       </nav>

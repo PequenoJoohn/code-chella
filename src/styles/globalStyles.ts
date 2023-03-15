@@ -7,12 +7,11 @@ export default createGlobalStyle`
         margin: 0;
         box-sizing: border-box;
         -webkit-touch-callout: none; /* iOS Safari */
-    -webkit-user-select: none; /* Safari */
-     -khtml-user-select: none; /* Konqueror HTML */
-       -moz-user-select: none; /* Old versions of Firefox */
+        -webkit-user-select: none; /* Safari */
+        -khtml-user-select: none; /* Konqueror HTML */
+        -moz-user-select: none; /* Old versions of Firefox */
         -ms-user-select: none; /* Internet Explorer/Edge */
-            user-select: none; /* Non-prefixed version, currently
-                                  supported by Chrome, Opera and Firefox */
+        user-select: none; /* Non-prefixed version, currently supported by Chrome, Opera and Firefox */
     }
 
     body {
@@ -25,7 +24,7 @@ export default createGlobalStyle`
         font-family: 'Calistoga', cursive;
     }
 
-    p, a, li, span {
+    label, p, a, li, span {
         font-family: 'Raleway', sans-serif;
     }
 
