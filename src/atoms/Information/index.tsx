@@ -21,7 +21,7 @@ const Information = ({ picture, title, description, position, button }: IInforma
                 </p>
 
                 {button &&
-                    <Button label="Comprar ingresso!" icon="./assets/icons/ticket.svg" />
+                    <Button type="button" label="Comprar ingresso!" icon="./assets/icons/ticket.svg" />
                 }
             </div>
         </Container>

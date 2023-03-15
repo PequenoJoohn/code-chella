@@ -14,7 +14,7 @@ const session = () => {
           festival diverso, com vários artistas e referências. Divirta-se!
         </p>
 
-        <Button label="Comprar ingresso!" icon="./assets/icons/ticket.svg" />
+        <Button type="button" label="Comprar ingresso!" icon="./assets/icons/ticket.svg" />
       </div>
     </Container>
   );
