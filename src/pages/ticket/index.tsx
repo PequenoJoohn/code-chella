@@ -1,4 +1,5 @@
 import Banner from "../../atoms/banner";
+import Footer from "../../components/footer";
 import Form from "../../components/form";
 import Navbar from "../../components/navbar";
 
@@ -19,8 +20,8 @@ const Ticket = () => {
         backgroundTablet={banners.backgroundTablet}
         backgroundMobile={banners.backgroundMobile}
       />
-      <h3>Preencha o formulário a seguir:</h3>
       <Form />
+      <Footer />
     </Container>
   );
 };
