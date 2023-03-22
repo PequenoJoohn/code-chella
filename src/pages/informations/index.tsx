@@ -29,30 +29,15 @@ const Informations = () => {
     },
     {
       title: "Qual é a classificação etária?",
-      content: `Lorem ipsum, dolor sit amet consectetur adipisicing elit. Mollitia veniam
-      reprehenderit nam assumenda voluptatem ut. Ipsum eius dicta, officiis
-      quaerat iure quos dolorum accusantium ducimus in illum vero commodi
-      pariatur? Impedit autem esse nostrum quasi, fugiat a aut error cumque
-      quidem maiores doloremque est numquam praesentium eos voluptatem amet!
-      Repudiandae, mollitia id reprehenderit a ab odit!`,
+      content: `O evento é restrito para menores de 18 anos. Todos os participantes deverão apresentar um documento oficial com foto na entrada do evento para comprovar a idade.`,
     },
     {
       title: "Quais são os setores disponíveis?",
-      content: `Sapiente expedita hic obcaecati, laboriosam similique omnis architecto ducimus magnam accusantium corrupti
-      quam sint dolore pariatur perspiciatis, necessitatibus rem vel dignissimos
-      dolor ut sequi minus iste? Quas?`,
+      content: `O evento contará com três setores: pista premium, pista comum e cadeiras. O setor de pista premium oferece uma experiência mais exclusiva, com uma visão privilegiada do palco e acesso a bares e banheiros exclusivos. Já a pista comum é uma ótima opção para quem quer aproveitar o evento de forma mais descontraída, com mais espaço para dançar e curtir a música. Por fim, o setor de cadeiras oferece um ambiente mais confortável para quem prefere assistir ao show sentado.`,
     },
     {
       title: "Quais são os itens proibidos?",
-      content: `Sapiente expedita hic obcaecati, laboriosam similique omnis architecto ducimus magnam accusantium corrupti
-        quam sint dolore pariatur perspiciatis, necessitatibus rem vel dignissimos
-        dolor ut sequi minus iste? Quas?`,
-    },
-    {
-      title: "Quais são os itens proibidos?",
-      content: `Sapiente expedita hic obcaecati, laboriosam similique omnis architecto ducimus magnam accusantium corrupti
-        quam sint dolore pariatur perspiciatis, necessitatibus rem vel dignissimos
-        dolor ut sequi minus iste? Quas?`,
+      content: `Para garantir a segurança de todos os participantes, alguns itens serão proibidos no evento. São eles: armas de fogo ou branca, objetos pontiagudos ou cortantes, drogas ilícitas, bebidas alcoólicas, alimentos e bebidas trazidos de fora do evento, câmeras profissionais, drones e outros equipamentos de gravação de vídeo. Também não será permitida a entrada de animais de estimação no evento. Todos os participantes serão revistados na entrada do evento para garantir o cumprimento dessas regras.`,
     },
   ];
 
